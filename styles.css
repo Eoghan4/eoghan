@@ -11,11 +11,61 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
     font-weight: 500;
     font-size: xx-large;
+    animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
 }
 
 .subtop{
     color: lightcyan;
     text-align: center;
+    opacity: 1;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    animation: waitfadeIn 3s ease;
     
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes waitfadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes waitfadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes waitfadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes waitfadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }

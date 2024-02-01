@@ -22,7 +22,7 @@ body{
     text-align: center;
     opacity: 1;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
-    font-size: 1.25vw;
+    font-size: 3vh;
     animation: waitfadeIn 4s ease;
     
 }

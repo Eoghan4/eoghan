@@ -1,0 +1,21 @@
+body{
+    background-color: #101112;
+}
+
+.top{
+    height: 10%;
+    margin-top: 10%;
+    margin-bottom: -3%;
+    color: lightcyan;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.subtop{
+    color: lightcyan;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    
+}

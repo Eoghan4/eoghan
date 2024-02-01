@@ -10,7 +10,7 @@ body{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
     font-weight: 500;
-    font-size: 2.5vw;
+    font-size: 6vh;
     animation: fadeIn 2s ease ;
     -moz-animation: fadeIn 2s;
     -webkit-animation: fadeIn 2s;

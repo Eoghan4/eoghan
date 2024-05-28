@@ -27,22 +27,6 @@ body{
     
 }
 
-.mainpar{
-    color: lightcyan;
-    text-align: center;
-    opacity: 1;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
-    font-size: 3vh;
-    border-bottom-style: solid;
-    border-top-style: solid;
-    border-radius: 1%;
-    border-color: lightcyan;
-    margin: auto;
-    width: fit-content;
-    padding: 10px;
-    animation: waitfadeIn 8s ease;
-}
-
 
 @keyframes fadeIn {
     0% { opacity: 0; margin-top: -10%; }

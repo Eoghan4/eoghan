@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Implementation</title>
+	<meta name="author" content="112092"/>
+	<meta name="description" content="Implementation"/>
+	<meta name="keywords" content="Leaving Cert, HTML, Computer Science"/>
+	<link rel="icon" type="image/x-icon" href="Images/Bono-Png.png">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8"/>	
+</head>
+<body>
+
+<ul>
+	<li><a href="report.html">Home Page</a></li>
+	<li><a href="brief.html">Meeting the Brief</a></li>
+	<li><a href="plan.html">Investigation and Plan</a></li>
+	<li><a href="design.html">Design</a></li>
+	<li><a class="active" href="implement.html">Implementation</a></li>
+	<li><a href="test.html">Testing</a></li>
+	<li><a href="evaluate.html">Evaluation</a></li>
+	<li><a href="reference.html">References</a></li>
+	<li><a href="summary.html">Summary</a></li>
+</ul>
+
+<br>
+
+<h1>Implementation</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>When implementing my design, the first thing I wanted to get done was the list representing the deck. My initial idea was to create a list and write each one of the 52 cards individually into the list. However, this would be an inefficient, time consuming way of doing this. I instead went online to the website “Stack Overflow”, and found an example of a simple line of code that could generate a list containing 52 cards without needing to manually type them out. By looking into previously made solutions to the problem I was facing, I was able to ensure that my code was as concise as possible.</p>
+<br>
+<p>The most important aspect of my code, in my opinion, is this function that allows the system to know what to do with the next card in the deck:</p>
+<br>
+<br>
+<img src="Images/getcard.png" alt="Sample Code" style="width:50%;height:25%;">
+<br>
+<p>It takes the card from the list of cards and breaks it down into its most basic information, such as its suit, value and picture(if it is a Jack, Queen or King). It took me a number of tries to get this right, with numerous re-writes to ensure it could be implemented easily. A problem I was facing in previous iterations of my code was that after implementing single player,  I would have to re-write very similar code over and over again in order to implement simulation and multiplayer. This was making my code almost impossible to read and even harder to edit if something wasn't working. This function made it so that rather than re-writing the segment 3 times, I could just call the function whenever a new card was drawn.</p>
+<br>
+<p>Another issue I came across was ensuring the Ace’s value was variable, like in the real game. At first, I decided to make it so that when a player receives an Ace, the algorithm checks if their value would exceed 21 if its value was 11, and if it did it would add a value of 1 to the player’s hand instead. This wasn’t accurate to the real life system, however, as in Blackjack if a player has an Ace that's value is worth 11 and their hand goes over 21, the Ace’s value is decreased to 1. Using the function previously mentioned as well as variables that check if the player has an Ace in their hand, I was able to recreate this to be more in line with the real life system and solve this problem.</p>
+<br>
+<img src="Images/ace.png" alt="Flow Chart" style="width:50%;height:25%;">
+<br>
+<p>In my artefact folder I have included a number of previous implementations of my code in the folder titled “Previous Versions”. Each of these versions show a different milestone in the implementation of my code, for example, the file entitled “blackjack3 - The simulation.py” was the first successful implementation of simulation play that I achieved. I decided to save all of these previous iterations as it allows me to see how I progressed and how I overcame certain problems. The file named “blackjack5 - The rewrite.py” is a large milestone, as it was when I decided to restart my code from scratch as I was facing a couple of major problems. In the previous versions, my code was inefficient and did not allow for the easy implementation of multiplayer or the aforementioned problem surrounding Aces. By rewriting the code and basing it on the function I showed, It made further implementation a lot easier.</p>
+
+
+</body>
+</html>

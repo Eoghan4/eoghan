@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plan</title>
+	<meta name="author" content="112092"/>
+	<meta name="description" content="Plan"/>
+	<meta name="keywords" content="Leaving Cert, HTML, Computer Science"/>
+	<link rel="icon" type="image/x-icon" href="Images/Bono-Png.png">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8"/>	
+</head>
+<body>
+
+<ul>
+	<li><a href="report.html">Home Page</a></li>
+	<li><a href="brief.html">Meeting the Brief</a></li>
+	<li><a class="active" href="plan.html">Investigation and Plan</a></li>
+	<li><a href="design.html">Design</a></li>
+	<li><a href="implement.html">Implementation</a></li>
+	<li><a href="test.html">Testing</a></li>
+	<li><a href="evaluate.html">Evaluation</a></li>
+	<li><a href="reference.html">References</a></li>
+	<li><a href="summary.html">Summary</a></li>
+</ul>
+
+<br>
+
+<h1>Investigation and Plan</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>When starting my project, I immediately thought of creating a model of a card game, as I thought it would be relatively easy to represent in a text-based format using a language like Python. Blackjack is a card game I am familiar with, and as such I felt it would be a good idea to create a model of this, rather than a game that would require learning a new game. As part of my investigation and planning I made sure to check the rules of Blackjack to ensure my model was as accurate to the real life system as possible. </p>
+<br>
+<p>I did some research into the specifics of Blackjack and cheked the rules on the game's Wikepedia page, which can be found <a href="https://en.wikipedia.org/wiki/Blackjack" id=link>here</a>.</p>
+<br>
+<p>Blackjack as a game consists of a number of players playing against one dealer, making it ideal for this project. My aim was to make this model playable by one person, two people, and by simulation. The player/s will always be playing against the dealer, which will be simulated, so my aim was to use the same automation system for both the dealer and the “player” for simulation play. In a standard Blackjack game, the dealer “stands” on 17. This means that when the dealer’s hand reaches a value of 17, they will no longer “hit”, or draw new cards. I planned to use this system for simulation, but rather than have the simulation always stand on 17 like the dealer, I wanted to make this a variable that could be set before running the game. This would allow me to see if any values of this variable had a higher win rate then others, and determine if any strategies could be developed with this information.</p>
+<br>
+<p>I needed a few systems in order for this model to work, for example a system to replicate a deck of cards, the ability for players to “hit” and “stand”, a system to check if an Ace should be worth 11 or 1, automation for both the dealer and simulation play, as well as other systems. I managed to find already existing solutions to some of these challenges online, for example I found a line of code to create a “deck of cards” on Stack Overflow. My goal was to combine the pre-existing solutions with my own code to create an accurate Blackjack model.</p>
+</body>
+</html>

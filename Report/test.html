@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing</title>
+	<meta name="author" content="112092"/>
+	<meta name="description" content="Testing"/>
+	<meta name="keywords" content="Leaving Cert, HTML, Computer Science"/>
+	<link rel="icon" type="image/x-icon" href="Images/Bono-Png.png">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8"/>	
+</head>
+<body>
+
+<ul>
+	<li><a href="report.html">Home Page</a></li>
+	<li><a href="brief.html">Meeting the Brief</a></li>
+	<li><a href="plan.html">Investigation and Plan</a></li>
+	<li><a href="design.html">Design</a></li>
+	<li><a href="implement.html">Implementation</a></li>
+	<li><a class="active" href="test.html">Testing</a></li>
+	<li><a href="evaluate.html">Evaluation</a></li>
+	<li><a href="reference.html">References</a></li>
+	<li><a href="summary.html">Summary</a></li>
+</ul>
+
+<br>
+
+<h1>Testing</h1>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>In order to test the code, I felt it would be best to test individual segments of the model in order to check that each part does its job. This, in my opinion, is better than testing the complete system, as if something goes wrong it can be hard to detect exactly what and where the issue is. Commenting out segments of my code allowed me to test individual functions and algorithms, and I substituted random variables with test case inputs in places I needed to test specific outcomes of a function.</p>
+<br>
+<p>For example, I had a problem with the Ace function where it was not giving the correct values. Rather than hope the player was randomly assigned an Ace, I replaced the random variable so that I would consistently be dealt Aces. This allowed me to see the specific issues with the system. I found that it was not correctly deducting the value of the Ace if the player went over 21, causing the player to go bust when they had a hand that shouldn’t be over 21. By testing this repeatedly I was able to find the specific line of code that was causing the problem and alter it.</p>
+<br>
+<p>By using test case tables I was able to document my tests and visualise the problems I’ve come across and how I was able to solve them. Below are examples of test case tables I made before fixing my code and after. You can see that after fixing the function the actual outcomes were in line with the expected outcomes.</p>
+<br>
+<img src="Images/TT1.png" alt="Sample Code" style="width:50%;height:25%;">
+<br>
+<img src="Images/TT2.png" alt="Sample Code" style="width:50%;height:25%;">
+<br>
+</body>
+</html>

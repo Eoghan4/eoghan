@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design</title>
+	<meta name="author" content="112092"/>
+	<meta name="description" content="Design"/>
+	<meta name="keywords" content="Leaving Cert, HTML, Computer Science"/>
+	<link rel="icon" type="image/x-icon" href="Images/Bono-Png.png">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8"/>	
+</head>
+<body>
+
+<ul>
+	<li><a href="report.html">Home Page</a></li>
+	<li><a href="brief.html">Meeting the Brief</a></li>
+	<li><a href="plan.html">Investigation and Plan</a></li>
+	<li><a class="active" href="design.html">Design</a></li>
+	<li><a href="implement.html">Implementation</a></li>
+	<li><a href="test.html">Testing</a></li>
+	<li><a href="evaluate.html">Evaluation</a></li>
+	<li><a href="reference.html">References</a></li>
+	<li><a href="summary.html">Summary</a></li>
+</ul>
+
+<br>
+
+<h1>Design</h1>
+
+<br>
+<br>
+<br>
+<br>
+<img src="Images/Blackjack.png" alt="Flow Chart" style="width:50%;height:25%;">
+<br>
+<p>In order to design this system, I feel it would be essential to divide the game up into a number of sections: Check the number of players, deal the starting cards, check whether a player wants to hit or stand, and determine a winner.</p> 
+<br>
+<p>But before doing any of this I would need a deck of cards. I think that creating a list of the 52 cards would suffice, and I could take objects out of the list using indexing in python to get individual cards.</p>
+<br>
+<p>Checking the number of players should be simple enough to implement, just a variable that the user can input when the programme is run would do. However, for simulation play, I feel that adding a couple more variables would help improve the user experience. For example, I think it would be important to add an input for how many times the user wants the simulation to run. In order to collect data for statistical analysis, a large number of simulations would need to be run. Having the user be able to determine how many times the simulation should run saves a lot of time when compared to manually running the programme over and over again.</p>
+<br>
+<p>When it comes to dealing cards I would need to make a function that can determine what card the player/dealer has received and adds a proportionate value to their hand. As I plan on using a list to represent the deck, I need to be able to take items out of that list and assign numerical values to each card. For number cards this is simple, but picture cards and Aces are more complicated. The function will need to check if the card is a Jack, King or Queen, and add a value of 10 to the hand if it is. If it is an Ace however, the function will need a variable to keep track of the number of Aces in a player's hand. As an Ace’s value is variable I feel the best way of designing this would be to make the function set the value of an Ace to 11, and deduct 10 if the value goes over 21.</p>
+<br>
+<p>In order to check if the player has or has not won  a few “if” statements can be used. If the player’s value is above 21, they’re bust and have lost.If it’s below 21 but below the dealer’s, they’ve also lost, but if it's below 21 and above the dealer’s they’ve one.</p>
+<br>
+
+
+<br>
+</body>
+</html>
